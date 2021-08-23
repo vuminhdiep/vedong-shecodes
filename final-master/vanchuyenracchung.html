@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vận chuyển rác chung</title>
+	<script src="login.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		/* Button used to open the contact form - fixed at the bottom of the page */
+		.open-button {
+			background-color: #555;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			opacity: 0.8;
+			width: 280px;
+		}
+
+		/* The popup form - hidden by default */
+		.form-popup2, .form-popup1, .form-popup3, .form-popup4{
+			display: none;
+			border: 3px solid #f1f1f1;
+			width: 400px;
+		}
+
+		/* Add styles to the form container */
+		.form-container {
+			max-width: 400px;
+			padding: 10px;
+			background-color: white;
+			overflow: auto;
+			font-size: 12pt;
+		}
+
+		/* Set a style for the submit/login button */
+		.form-container .btn {
+			background-color: #4CAF50;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom:10px;
+			opacity: 0.8;
+		}
+
+		/* Add a red background color to the cancel button */
+		.form-container .cancel {
+			background-color: red;
+		}
+
+		/* Add some hover effects to buttons */
+		.form-container .btn:hover, .open-button:hover {
+			opacity: 1;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="colorlib-page">
+	<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+	<aside id="colorlib-aside" role="complementary" class="js-fullheight img" style="background-image: url(https://image2020.s3.us-east-2.amazonaws.com/sidebar-bg.jpg);">
+		<h1 id="colorlib-logo" class="mb-4"><a href="trangchu.html">ve-đồng</a></h1>
+		<nav id="colorlib-main-menu" role="navigation">
+			<ul>
+				<li><a href="trangchu.html">trang chủ</a></li>
+				<li><a href="gocxanh.html">góc xanh</a></li>
+				<li class="colorlib-active"><a href="vanchuyenracchung.html">vận chuyển rác chung</a></li>
+				<li><a href="about.html">về chúng tôi</a></li>
+				<li><a href="map.html">bản đồ tái chế</a> </li>
+				<li><a href="contact.html">liên hệ</a></li>
+				<li><a href="donate.html">đóng góp</a></li>
+			</ul>
+		</nav>
+		<div class="colorlib-footer">
+			<p class="pfooter">
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script></p>
+		</div>
+	</aside> <!-- END COLORLIB-ASIDE -->
+
+	<div id="colorlib-main">
+		<br>
+		<br>
+		<div align="center">
+			<p>Nếu bạn muốn gom rác tái chế của mình nhưng không có thời gian mang đến nơi tập kết,
+				hãy nhấp <span>Nhờ tái chế </span>với mức phí 1 Ve-đồng.</p>
+			<p>Nếu bạn muốn giúp cộng đồng mang rác tái chế đến nơi tập kết,
+				hãy nhấp <span>Thu gom hộ </span>và nhận 1 Ve-đồng. </p>
+		</div>
+		<div class="container" id="login" style="width : 50%">
+			<br>
+			<label for="username"><b>Tên tài khoản  </b></label>
+			<input type="text" placeholder="Tên đăng nhập " id = "username" required> <br>
+
+			<label for="password"><b>Mật khẩu </b></label>
+			<input type="password" placeholder="Mật khẩu" id="password" name="password" required>
+			<br>
+			<button type="submit" onclick="login()">Đăng nhập</button><br>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Ghi nhớ người dùng
+			</label>
+		</div>
+
+		<br/>
+		<br/>
+	<div class = "container" id="signup" style = "width: 50%">
+		<br>
+		<label for="username1"><b>Đăng ký  </b></label>
+		<input type="text" placeholder="Tên đăng ký tài khoản " id = "username1" required> <br>
+		<label for="username2"><b>Email  </b></label>
+		<input type="text" id = "username2" required> <br>
+		<label for="password1"><b>Mật khẩu </b></label>
+		<input type="password" placeholder="Mật khẩu" id="password1" name="password" required>
+		<br>
+		<label for="password2"><b>Nhập lại mật khẩu </b></label>
+		<input type="password" id="password2" name="password" required>
+		<br>
+		<button type="submit" onclick="signup()">Đăng ký</button><br>
+		<label>
+			<input type="checkbox"  name="remember"> lưu ý: mật khẩu mạnh nên có > 8 ký tự
+		</label>
+	</div>
+
+		<div id="info" align="center" style="visibility : hidden">
+			<img src="https://image2020.s3.us-east-2.amazonaws.com/default.jpg" alt="user" style="width:15%">
+			<h1 id="name"></h1>
+			<p class="title">Thành Viên</p>
+			<p id="location"></p>
+			<p id = "coin"></p>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+
+		<div id="buttons" style="visibility: hidden; height: auto" align="center" >
+			<button id= "button1" class="open-button" onclick="openRecycle()">Nhờ vận chuyển</button>
+			<button id = "button2" class="open-button" onclick="openCollect()">Thu gom hộ</button>
+			<button class="open-button" onclick="openHistory()">Quản lý hoạt động</button>
+		</div>
+
+
+		<div id="forms" align="center">
+			<div class="form-popup1" id="recycle" align="left">
+				<form action="/action_page.php" class="form-container">
+					<h1>Nhờ vận chuyển</h1>
+					<p> Hôm nay bạn muốn nhờ vận chuyển những gì? </p>
+
+					<input type="checkbox" id="item2" name="recycle" value="item2">
+					<label for="item2"> Vỏ mỳ tôm</label><br>
+					<input type="checkbox" id="item3" name="recycle" value="item3">
+					<label for="item3"> Ống hút đã sử dụng</label><br>
+					<input type="checkbox" id="item4" name="recycle" value="item4">
+					<label for="item4"> Sách cũ</label><br>
+					<input type="checkbox" id="item5" name="recycle" value="item5">
+					<label for="item5"> Quần áo cũ</label><br>
+					<input type="checkbox" id="item6" name="recycle" value="item6">
+					<label for="item6"> Rác thải điện tử</label><br>
+					<input type="checkbox" id="item1" name="recycle" value="item1">
+					<label for="item1"> Phế liệu</label><br><br>
+
+					<button type="button" class="btn" onclick="doneRecycle()">Hoàn tất </button>
+					<button type="button" class="btn cancel" onclick="closeRecycle()"> Đóng </button>
+				</form>
+			</div>
+
+			<div class="form-popup2" id="collect" align="left">
+				<form action="/action_page.php" class="form-container">
+					<h1>Thu gom</h1>
+					<p> Hôm nay bạn muốn giúp thu gom những gì? </p>
+
+					<input type="checkbox" id="collect2" name="collect" value="collect2">
+					<label for="collect2"> Vỏ mỳ tôm</label><br>
+					<input type="checkbox" id="collect3" name="collect" value="collect3">
+					<label for="collect3"> Ống hút đã sử dụng</label><br>
+					<input type="checkbox" id="collect4" name="collect" value="collect4">
+					<label for="collect4"> Sách cũ</label><br>
+					<input type="checkbox" id="collect5" name="collect" value="collect5">
+					<label for="collect5"> Quần áo cũ</label><br>
+					<input type="checkbox" id="collect6" name="collect" value="collect6">
+					<label for="collect6"> Rác thải điện tử</label><br>
+					<input type="checkbox" id="collect1" name="collect" value="collect1">
+					<label for="collect1"> Phế liệu</label><br><br>
+
+					<button type="button" class="btn" onclick="doneCollect()">Hoàn tất</button>
+					<button type="button" class="btn cancel" onclick="closeCollect()">Đóng</button>
+				</form>
+			</div>
+
+			<br>
+			<div id="result" align="center"></div>
+		</div>
+
+		<div id = "history" style="display: none" align="center">
+			<div class="form-popup3" id="complete" align="left">
+				<form action="/action_page.php" class="form-container">
+					<h3>Hoạt động chờ phê duyệt</h3>
+					<input type="checkbox" id="done1" name="done" value="done1">
+					<label for="done1"> Thu gom hộ vỏ mỳ tôm</label><br>
+					<input type="checkbox" id="done2" name="done" value="done2">
+					<label for="done2"> Thu gom hộ ống hút</label><br>
+
+					<button type="button" class="btn" onclick="doneComplete()">Hoàn tất</button>
+				</form>
+			</div>
+			<br>
+			<div style=" border: 3px solid #f1f1f1; width: 400px;">
+				<h3>Hoạt động đã hoàn thành</h3>
+				<ol style="align-items: start">
+					<li>Thu gom phế liệu </li>
+					<li>Góp sách cũ </li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>
